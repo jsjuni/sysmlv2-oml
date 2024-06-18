@@ -1,0 +1,8 @@
+description bundle <http://studioj.us/description/example-bundle#> as example-description-bundle {
+	
+	uses <http://omg.org/SysML-v2/kerml-bundle#>
+	uses <http://omg.org/SysML-v2/pairs#>
+	
+	includes <http://studioj.us/description/example#>
+	
+}

@@ -1,0 +1,63 @@
+vocabulary <http://studioj.us/vocabulary/example#> as example-vocabulary {
+
+	concept Anything
+
+
+	concept Link < example-vocabulary:Anything
+
+
+	concept BinaryLink < example-vocabulary:Link
+
+
+	concept BinaryLinkObject < example-vocabulary:BinaryLink, example-vocabulary:LinkObject
+
+
+	concept Transfer < example-vocabulary:BinaryLink, example-vocabulary:Performance
+
+
+	concept LinkObject < example-vocabulary:Link, example-vocabulary:Object
+
+
+	concept HappensLink < example-vocabulary:BinaryLink
+
+
+	concept HappensBefore < example-vocabulary:HappensLink
+
+
+	concept TransferBefore < example-vocabulary:Transfer, example-vocabulary:HappensBefore
+
+
+	concept FlowTransferBefore < example-vocabulary:TransferBefore, example-vocabulary:FlowTransfer
+
+
+	concept FlowTransfer < example-vocabulary:Transfer
+
+
+	concept MessageTransfer < example-vocabulary:Transfer
+
+
+	concept Object < example-vocabulary:Occurrence
+
+
+	concept Clock < example-vocabulary:Object
+
+
+	concept UniversalClockLife < example-vocabulary:Clock, example-vocabulary:Life
+
+
+	concept DefaultMonitorLife < example-vocabulary:Clock, example-vocabulary:ChangeMonitor, example-vocabulary:Life
+
+
+	concept ChangeMonitor < example-vocabulary:Object
+
+
+	concept Occurrence < example-vocabulary:Anything
+
+
+	concept Performance < example-vocabulary:Occurrence
+
+
+	concept Life < example-vocabulary:Occurrence
+
+
+}

@@ -1,0 +1,5 @@
+vocabulary bundle <http://studioj.us/vocabulary/example-bundle#> as example-vocabulary-bundle {
+	
+	includes <http://studioj.us/vocabulary/example#>
+	
+}
